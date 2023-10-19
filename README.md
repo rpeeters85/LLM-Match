@@ -1,6 +1,4 @@
-**!Code for our new paper "Entity Matching using Large Language Models" will be added to this repository by 20th of October!**
-
-This repository contains code and extensive prompt examples to reproduce and extend the experiments in our paper **"Entity Matching using Large Language Models"**. A preprint of the paper is available on [arxiv](https://arxiv.org/abs/2305.03423).
+This repository contains code and extensive prompt examples to reproduce and extend the experiments in our paper **"Entity Matching using Large Language Models"**.
 
 * **Requirements**
 
@@ -8,18 +6,18 @@ This repository contains code and extensive prompt examples to reproduce and ext
 
 * **Building the conda environment**
 
-    To build the exact conda environment used for the experiments, navigate to the project root folder where the file *MatchGPT_llm.yml* is located and run ```conda env create -f MatchGPT_llm.yml```
+    To build the exact conda environment used for the experiments, navigate to the project root folder where the file *llm_match.yml* is located and run ```conda env create -f llm_match.yml```
 
 * **Jupyter Notebooks**
 
     The code is split into three main notebooks:
 
-1. **MatchGPT_\*** - These notebooks contains the code for running the different tasks in zero-shot and with rules either against the OpenAI API or locally for the open source LLMs.
-2. **MatchGPT_\*-context** - Same as 1 but specifically for the in-context experiments
-3. **MatchGPT_\*-finetune** - These notebooks contains the code for running the different tasks in zero-shot configuration using the ChatGPT models we fine-tuned.
+1. **LLMMatch_\*** - These notebooks contains the code for running the different tasks in zero-shot and with rules either against the OpenAI API or locally for the open source LLMs.
+2. **LLMMatch_\*-context** - Same as 1 but specifically for the in-context experiments
+3. **LLMMatch_\*-finetune** - These notebooks contains the code for running the different tasks in zero-shot configuration using the ChatGPT models we fine-tuned.
 
 * **Optional Notebooks for reproduction purposes**
-1. **MatchGPT_downsample_\*_task** - This optional notebook contains the code for downsampling the original WDC Products 80% corner-case set and the other benchmarks.
+1. **LLMMatch_\*_task** - This optional notebook contains the code for downsampling the original WDC Products 80% corner-case set and the other benchmarks.
 2. **prep_em_tasks** - This notebook contains the code for preparing the tasks (prompt designs) as json files for usage in the MatchGPT notebooks.
 2. **prep_finetune_\*** - Code for preparing the datasets for fine-tuning using the format required by OpenAI.
 3. **fine-tune-\*** - The code for fine-tuning the OpenAI ChatGPT models that are used in 3.
